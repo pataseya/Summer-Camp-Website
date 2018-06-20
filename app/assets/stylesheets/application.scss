@@ -16,3 +16,54 @@
 
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+
+<<<<<<< HEAD
+/* Container holding the image and the text */
+.container {
+    position: relative;
+  
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+=======
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+>>>>>>> e85ac4c7d36d97f90deff109bec1521d8c56e6ff
