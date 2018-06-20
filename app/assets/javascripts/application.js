@@ -18,8 +18,3 @@
 //= require turbolinks
 //= require_tree .
 
-<script type="text/javascript">
-$(document).ready(function(){
-     $("#myCarousel").carousel();
-});
-</script>
