@@ -16,3 +16,8 @@
 
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
