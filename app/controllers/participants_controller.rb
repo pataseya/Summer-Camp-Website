@@ -26,8 +26,13 @@ class ParticipantsController < ApplicationController
   def create
     @participant = Participant.new(participant_params)
 
+
     respond_to do |format|
       if @participant.save
+
+           #Tell the UserMailer to send a wecome email after saving user
+#        UserMailer.welcome_email(@participant).deliver_now  
+
         format.html { redirect_to @participant, notice: 'Participant was successfully created.' }
         format.json { render :show, status: :created, location: @participant }
       else

@@ -17,6 +17,7 @@
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
 
+<<<<<<< HEAD
 /* Makes images fully responsive */
 
 .img-responsive,
@@ -91,3 +92,57 @@
   }
 
 }
+=======
+
+/* Container holding the image and the text */
+.containerb {
+    position: relative;
+  
+}
+
+/* Bottom left text */
+.bottom-left {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+
+>>>>>>> 37e06355b36404f88fe4d4d331df886034a1cc79
