@@ -27,13 +27,17 @@
 .carousel-inner > .item > a > img {
   display: block;
   width: 100%;
-  height: auto;
+  max-height: 500px !important;
 }
 
 /* ------------------- Carousel Styling ------------------- */
 
 .carousel-inner {
-  border-radius: 15px;
+  border-radius: 10px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
 
 .carousel-caption {
@@ -66,7 +70,9 @@
 }
 
 
-/* ------------------- Section Styling - Not needed for carousel styling ------------------- */
+
+
+/* Section Styling - Not needed for carousel styling ------------------- */
 
 .section-white {
    padding: 10px 0;
@@ -90,58 +96,32 @@
   .container {
     max-width: 930px;
   }
-
 }
 
 
-/* Container holding the image and the text */
+/* Container holding the image on the registration page and the text */
 .containerb {
     position: relative;
-  
 }
 
-/* Bottom left text */
-.bottom-left {
-    font-size: 40px;
-    color: white;
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+/* Formatting for registration form */
+
+#loginForm {
+  width: 500px;
+  height: 400px;
+  position:relative;
+  z-index:10;
 }
 
-/* Top left text */
-.top-left {
+/* Centered space for registration text */
+#regcentered {
     position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-/* Top right text */
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
-
-/* Centered text */
-.centered {
-    font-size: 40px;
-    color: white;
-    position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
-.carousel-inner > .item > img {
-    margin: 0 auto;
-}
+
 
 

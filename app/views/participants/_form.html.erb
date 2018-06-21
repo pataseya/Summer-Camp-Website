@@ -11,42 +11,58 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :participant_name %>
-  </div>
+   <div id="loginForm">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2 class="panel-title">We want to go to BratCamp!!</h2>
+       </div>
+         <div class="panel-body">
+             <div class="field">
+              <%= form.label :name, "Child's Name:  " %>
+              <%= form.text_field :name, id: :participant_name %>
+             </div>
 
-  <div class="field">
-    <%= form.label :age %>
-    <%= form.number_field :age, id: :participant_age %>
-  </div>
+              <div class="field">
+                <%= form.label :age, "Child's Age:  "  %>
+                <%= form.number_field :age, id: :participant_age %>
+              </div>
 
-  <div class="field">
-    <%= form.label :sex %>
-    <%= form.text_field :sex, id: :participant_sex %>
-  </div>
+              <div class="field">
+                <%= form.label :sex, "Child's Sex:  "  %>
+                <%= form.text_field :sex, id: :participant_sex %>
+              </div>
 
-  <div class="field">
-    <%= form.label :allergies %>
-    <%= form.text_field :allergies, id: :participant_allergies %>
-  </div>
+              <div class="field">
+                <%= form.label :allergies, "Child's Allergies?  "  %>
+                <%= form.text_field :allergies, id: :participant_allergies %>
+              </div>
 
-  <div class="field">
-    <%= form.label :parent %>
-    <%= form.text_field :parent, id: :participant_parent %>
-  </div>
+              <div class="field">
+                <%= form.label :parent, "Parent's Name:  "  %>
+                <%= form.text_field :parent, id: :participant_parent %>
+              </div>
 
-  <div class="field">
-    <%= form.label :parentemail %>
-    <%= form.text_field :parentemail, id: :participant_parentemail %>
-  </div>
+              <div class="field">
+                <%= form.label :parentemail, "Parent's Email:  "  %>
+                <%= form.text_field :parentemail, id: :participant_parentemail %>
+              </div>
 
-  <div class="field">
-    <%= form.label :notes %>
-    <%= form.text_field :notes, id: :participant_notes %>
-  </div>
+              <div class="field">
+                <%= form.label :notes, "Other Notes we should know:  "  %>
+                <%= form.text_area :notes, id: :participant_notes %>
+              </div>
+           
+              <div class="actions">
+                <%= form.submit "Register my Child for BratCamp!" %>   
+              </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+
+
+
+
+
+
 <% end %>

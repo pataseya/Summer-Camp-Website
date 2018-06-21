@@ -29,17 +29,18 @@ class ParticipantsController < ApplicationController
 
     respond_to do |format|
       if @participant.save
-
+        UserMailer.welcome_email(@participant).deliver_now
            #Tell the UserMailer to send a wecome email after saving user
 #        UserMailer.welcome_email(@participant).deliver_now  
 
-        format.html { redirect_to @participant, notice: 'Participant was successfully created.' }
+        format.html { redirect_to @participant, notice: 'Participant was successfully registered.' }
         format.json { render :show, status: :created, location: @participant }
       else
         format.html { render :new }
         format.json { render json: @participant.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /participants/1
