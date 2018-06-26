@@ -1,39 +1,52 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @participant.name %>
-</p>
+<div class="containerb" align="center">
+    <img src="http://eyslakemary.com/wp-content/uploads/2015/07/four-kids-asp-page.png" alt="Snow" style="width:100%;">
+    <div id="regcentered">
+        
+      <div id="loginForm">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h2 class="panel-title">Please review your registraiton information.</h2>
+           </div>
+             <div class="panel-body">
+                <div>
+                  <strong>Child's Name:    </strong>
+                    <%= @participant.name %>
+                </div>
+                <div >
+                  <strong>Child's Age:    </strong>
+                   <%= @participant.age %>
+                </div>
+                <div>
+                  <strong>Child's Sex:    </strong>
+                  <%= @participant.sex %>
+                </div>
+                <div>
+                  <strong>Child's Allergies:    </strong>
+                  <%= @participant.allergies %>
+                </div>
+                <div>
+                    <strong>Parent Name:    </strong>
+                    <%= @participant.parent %>
+                </div>
+                <div>
+                  <strong>Parent's Email:    </strong>
+                  <%= @participant.parentemail %>
+                </div>
+                <div>
+                    <strong>Notes:</strong>
+                    <%= @participant.notes %>
+                </div>
+                <div>
+                  <br><p><%= link_to "Return To Home", root_path %><br>
+                  <%= link_to "Change registration", edit_participant_path(@participant) %> <br />|
+                  <%= link_to 'See all participants', participants_path %></p><br>
+                </div>
+             </div>
+          </div>
+      </div>
+    </div>
+</div>
 
-<p>
-  <strong>Age:</strong>
-  <%= @participant.age %>
-</p>
 
-<p>
-  <strong>Sex:</strong>
-  <%= @participant.sex %>
-</p>
-
-<p>
-  <strong>Allergies:</strong>
-  <%= @participant.allergies %>
-</p>
-
-<p>
-  <strong>Parent:</strong>
-  <%= @participant.parent %>
-</p>
-
-<p>
-  <strong>Parentemail:</strong>
-  <%= @participant.parentemail %>
-</p>
-
-<p>
-  <strong>Notes:</strong>
-  <%= @participant.notes %>
-</p>
-
-<%= link_to 'Edit', edit_participant_path(@participant) %> |
-<%= link_to 'Back', participants_path %>

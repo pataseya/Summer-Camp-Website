@@ -83,25 +83,16 @@
   color: #555;
 }
 
-@media screen and (min-width: 768px) {
 
-  .section-white {
-     padding: 1.5em 0;
-  }
 
-}
-
-@media screen and (min-width: 992px) {
-
-  .container {
-    max-width: 930px;
-  }
-}
 
 
 /* Container holding the image on the registration page and the text */
 .containerb {
     position: relative;
+      margin-top: -30px;
+  margin-bottom: 0px;
+  border-bottom: none;
 }
 
 /* Formatting for registration form */
@@ -121,6 +112,102 @@
     transform: translate(-50%, -50%);
 
 }
+
+.jumbotron {
+  opacity: 0.9;
+
+  margin-top: -30px;
+  margin-bottom: 0px;
+  border-bottom: none;
+  background: url("https://qz.com/wp-content/uploads/2017/07/summercamp-financial-literacy-e1500998504737.jpg?quality=80&strip=all&w=3140") no-repeat center center;;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 450px; 
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron2 {
+  margin-top: -30px;
+  margin-bottom: 0px;
+  border-bottom: none;
+  background: url("https://www.ymcatreasurecoast.org/wp-content/uploads/2015/07/Staff.thumbsup1.jpg") no-repeat center center;;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 550px; 
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+
+
+#whiteh1 {
+  color: blue;
+}
+
+.well {
+    margin: -30px;
+
+    border-top: none;
+}
+
+
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+
+
+  .navbar-nav > li.navbar-right {
+    float: right !important;
+  }
+
+.diva {
+  background-color: black;
+  text-align: center;
+  opacity: 0.5;
+  width:auto;
+  height: 100%;
+  margin-top: 400px;
+  margin-left: 0;
+  margin-right:auto;
+  padding: 15px;
+  border-radius: 20px; 
+}
+
+.divb {
+  background-color: #18b4e0;
+  text-align: center;
+
+  width:auto;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 0;
+  margin-right:auto;
+  padding: 15px;
+  border-radius: 20px; 
+
+}
+ .staffimg {
+  border-color: blue;
+  border-radius: 50%;
+  border-width: thick; 
+  max-width: 100%;
+  height: auto;
+ }
+
+
+.mybutton { 
+
+  color: white;
+  background-color: #088db2;
+  padding: 10px;
+  border-radius: 10px;
+ }
 
 
 

@@ -33,7 +33,8 @@ class ParticipantsController < ApplicationController
            #Tell the UserMailer to send a wecome email after saving user
 #        UserMailer.welcome_email(@participant).deliver_now  
 
-        format.html { redirect_to @participant, notice: 'Participant was successfully registered.' }
+
+        format.html { redirect_to @participant, notice: 'Yippee! Your child has been successfully registered for BratCamp!' }
         format.json { render :show, status: :created, location: @participant }
       else
         format.html { render :new }
@@ -48,7 +49,7 @@ class ParticipantsController < ApplicationController
   def update
     respond_to do |format|
       if @participant.update(participant_params)
-        format.html { redirect_to @participant, notice: 'Participant was successfully updated.' }
+        format.html { redirect_to @participant, notice: "Nice! Your child's regiatration has been successfully updated!" }
         format.json { render :show, status: :ok, location: @participant }
       else
         format.html { render :edit }
