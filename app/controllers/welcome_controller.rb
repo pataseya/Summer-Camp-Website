@@ -7,4 +7,7 @@ class WelcomeController < ApplicationController
 
   def activities
   end
+
+
+
 end

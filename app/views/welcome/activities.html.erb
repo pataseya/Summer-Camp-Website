@@ -1,48 +1,43 @@
 <div class="jumbotron">
   <div class="container">
-  <h2 class="divb">BratCamp has so many great activities for your kids!</h2>
-  </div>
-</div>
-<div class="well-lg"  style="background-color: #18b4e0; margin-top: -30px;">
-  <div class="row"> 
-    <div class="col-md-1"></div>
-    <div class="col-md-10"> 
-      <h3 style="text-align: center;">Take a look at all the exciting experiences your child will encounter! All activities are led by expertly trained camp leaders to ensure each and every child feels empowered and successful! </h3>
-    </div>
-    <div class="col-md-1"></div>
-  </div>
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-     <%= image_tag("campfire.jpg")%>
-      <div class="caption">
-        <h3>Camp Fire Skills</h3>
-        <p>We teach fire safety skills along with all of our camp fire activities including proper setting, cooking and extinguishing.</p>
-        <p>Counselor Jenny leads all of our fire safety instruction.</p>
-        <p><%= link_to "Meet Jenny", about_path, target: "_blank", :class => "btn btn-default" %> </p>
-      </div>
-    </div>
-  </div>
-    <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-       <%= image_tag("canoeing.JPG") %>
-      <div class="caption">
-        <h3>Water Skills & Safety</h3>
-        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. </p>
-        <p><%= link_to "Meet Jenny", about_path, target: "_blank", :class => "btn btn-default" %> </p>
-      </div>
-    </div>
-  </div>
-    <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <%= image_tag("naturehike.jpg") %>
-      <div class="caption">
-        <h3>Nature Hikes & Navigation Skills</h3>
-        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-        <p><%= link_to "Meet Jenny", about_path, target: "_blank", :class => "btn btn-default" %> </p>
-      </div>
-    </div>
+
+  <h2 style="color: white;"><u>B</u><em>ecoming</em> a <u>R</u><em>eally</em> <u>A</u><em>wesome</em> <u>T</u><em>een</em></h2>
+  <h2 style="color: white;">is the goal of our camp activites.</h2>
   </div>
 </div>
 
-</div>
+<div class="container">
+
+
+      <div class="row">
+        <img class="featurette-image pull-right" <%= image_tag("campfire.jpg")%>
+        <h2 class="featurette-heading">Camp Fire Skills & Safety</h2>
+        <p class="lead">We teach fire safety skills along with all of our camp fire activities including proper setting, cooking and extinguishing.</p>
+        <h4>Counselor Brad leads all of our fire safety instruction.&nbsp &nbsp
+        <%= link_to "Meet Brad", about_path, target: "_blank", :class => "btn btn-default" %> </h4>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="row">
+        <img class="featurette-image pull-left" <%= image_tag("canoeboy.jpg") %>
+        <h2 align="right">Water Skills & Recreation </h2>
+        <p class="lead" align="right">What would summer camp be without water sports and activities! Our campers can enjoy swimming in our crystal clear lake every day with life guards always on duty. We offer swim instruction to all campers who are interested. In addition, we will cover basic canoeing skills and lead the kids on several half-day portage hikes. </p>
+        <h4 align="right">Counselor Jenny is one of our life guards and swim  instructors.&nbsp &nbsp <%= link_to "Meet Jenny", about_path, target: "_blank", :class => "btn btn-default" %> </h4>
+      
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row">
+        <img class="featurette-image pull-right" <%= image_tag("hiking.jpg")%>
+        <h2>Hiking & Wilderness Survival Skills</h2>
+        <p class="lead" >Learning wilderness and survival skills are a big part of how our campers become confident in themselves and learn to work as a team. All campers learn how to use a compass, how to start a fire with flints and practice shelter building techniques. </p>
+        <h4>Counselor Michael is our expert in wilderness skills.&nbsp &nbsp
+       <%= link_to "Meet Michael", about_path, target: "_blank", :class => "btn btn-default" %> </h4>
+      </div>
+
+      <hr class="featurette-divider">
+
+      </div>

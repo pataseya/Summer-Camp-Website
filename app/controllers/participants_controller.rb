@@ -1,12 +1,16 @@
 class ParticipantsController < ApplicationController
   before_action :set_participant, only: [:show, :edit, :update, :destroy]
-
+  http_basic_authenticate_with :name => "admin", :password => "lovebrats", only: :index
   # GET /participants
   # GET /participants.json
   def index
+
     @participants = Participant.all
+
+
   end
 
+  
   # GET /participants/1
   # GET /participants/1.json
   def show
@@ -34,7 +38,7 @@ class ParticipantsController < ApplicationController
 #        UserMailer.welcome_email(@participant).deliver_now  
 
 
-        format.html { redirect_to @participant, notice: 'Yippee! Your child has been successfully registered for BratCamp!' }
+        format.html { redirect_to @participant, notice: 'Yippee! Your child has been successfully registered for B.R.A.T. Camp!' }
         format.json { render :show, status: :created, location: @participant }
       else
         format.html { render :new }
