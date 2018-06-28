@@ -19,6 +19,7 @@ class ParticipantsController < ApplicationController
   # GET /participants/new
   def new
     @participant = Participant.new
+
   end
 
   # GET /participants/1/edit
@@ -33,9 +34,7 @@ class ParticipantsController < ApplicationController
 
     respond_to do |format|
       if @participant.save
-        UserMailer.welcome_email(@participant).deliver_now
-           #Tell the UserMailer to send a wecome email after saving user
-#        UserMailer.welcome_email(@participant).deliver_now  
+
 
 
         format.html { redirect_to @participant, notice: 'Yippee! Your child has been successfully registered for B.R.A.T. Camp!' }
