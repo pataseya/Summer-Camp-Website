@@ -145,7 +145,7 @@
   margin-top: -30px;
   margin-bottom: 0px;
   border-bottom: none;
-  background: url("https://www.thoughtco.com/thmb/LQglwmR43a7KEK5t6UorRQWkmQE=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/balancingteen-5849867c3df78ca8d550876e.jpg") no-repeat center center;
+  background: url(<%= asset_path 'balanceteen.jpg' %>) no-repeat center center;
   background-size: cover;
   color: white;
   width: 100%;
