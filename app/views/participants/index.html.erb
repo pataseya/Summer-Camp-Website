@@ -28,9 +28,8 @@
         <td><%= participant.parent %></td>
         <td><%= participant.parentemail %></td>
         <td><%= participant.notes %></td>
-        <td><%= link_to 'Show', participant %></td>
-        <td><%= link_to 'Edit', edit_participant_path(participant) %></td>
-        <td><%= link_to 'Destroy', participant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit Participant', edit_participant_path(participant) %></td>
+        <td><%= link_to 'Delete Participant', participant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,5 +37,5 @@
 
 <br>
 
-<%= link_to 'New Participant', new_participant_path %>
+<%= link_to 'Add a Participant', new_participant_path %>
 </div>
