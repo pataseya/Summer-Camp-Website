@@ -1,5 +1,9 @@
 class ParticipantsController < ApplicationController
+  
+  before_action :authenticate_user!
+  before_action :require_admin, only: [:index, :destroy]
   before_action :set_participant, only: [:show, :edit, :update, :destroy]
+
   
   # GET /participants
   # GET /participants.json
@@ -81,4 +85,12 @@ class ParticipantsController < ApplicationController
     def participant_params
       params.require(:participant).permit(:name, :age, :sex, :allergies, :parent, :parentemail, :notes)
     end
+
+    def require_admin 
+      if !current_user.admin?
+        redirect_to root_path, notice:"I'm sorry, you're not authorized to view this page."
+      end
+
+    end
+
 end
